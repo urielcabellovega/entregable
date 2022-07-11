@@ -1,0 +1,72 @@
+/*.Login{
+    background: url("https://images8.alphacoders.com/996/996657.jpg") no-repeat center fixed;
+    background-size: cover;
+}*/
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.Login{
+    padding: 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+#Container{
+    margin-top: 1em;
+    padding: 2em;
+    border-radius: 25px;
+    background-color:rgba(255, 255, 255, 0.767);
+    width: 30%;
+    height: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body{
+    background: url("https://images8.alphacoders.com/996/996657.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+#pokemonlogo{
+    margin-top: 0%;
+    position: absolute;
+    object-fit: contain;
+    height: auto;
+    width: 25%;
+}
+
+#form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    width: 50%;
+    z-index: 2;
+}
+#logininput{
+    margin-top: 75%;
+    width: 140%;
+    height: 2em;
+    border-radius: 25px;
+}
+#loginbutton{
+    width: 140%;
+    height: 2em;
+    border-radius: 25px;
+    color: white;
+    background-color: #3B8BEB;
+    border-color : rgba(0, 0, 255, 0);
+}

@@ -1,0 +1,162 @@
+/*Characters y charactercard*/
+.Characters{
+    height: max-content;
+    padding-top: 2em;
+    background-color: rgb(28, 26, 26) ;
+    
+}
+#pokedex{
+    margin-top: 1%;
+    padding-left: 3em;
+    font-size: 2.5em;
+    height: 2em;
+    text-align: left;
+    margin-left: 0%;
+
+}
+h1{
+    font-size:xx-large;
+    text-align: left;
+    color: white;    
+    margin-top: 0%;
+}
+.welcome-message{
+    padding-left: 8em;
+    color: white;
+}
+.pokemons-list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    width: 85%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:flex-start;
+    list-style: none;
+}
+.Pagination{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 4em;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: space-between;
+}
+.ol{
+    border-radius: 15px;
+    width: 20%;
+    height: 25%;
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-right: 1%;
+    margin-left: 1%;
+    transition: width 1s, height 1s;
+}
+.ol:hover {
+    width: 22%;
+    height: 22%;
+  }
+.ol p{
+    color: white;
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+.ol h3{
+    color: white;
+    display: inline;
+}
+.ol div{
+    width: 50%;
+}
+
+
+.character-card{
+    text-decoration: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.input-container{
+    margin-bottom: 1em;
+}
+#imgcharactercard{
+    margin-top: 60%;
+    width: 100%;
+    max-height: 35%;
+
+}
+a{
+    font-style: normal;
+}
+.button{
+    background-color: hsl(233, 61%, 64%);
+    color: white;
+    text-decoration: double;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 100em;
+    border: none;
+    transition: width 1s, height 1s;
+
+}
+.button:hover {
+    display: block;
+    background-color: hsl(144, 48%, 60%)!important;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+#type, #maininfo, #abilities, #statbase, #movements{
+    background-color: white;
+    display: block;
+    border-radius: 0.5em;
+    text-align: center;
+    
+}
+#characterinfo{
+    padding: 4em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 45% 25% 30%;
+    column-gap: 1em;
+    row-gap: 2em;
+}
+#type{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#maininfo{
+  height: 40%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#moves{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;  
+}
+#statbase{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#abilities{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

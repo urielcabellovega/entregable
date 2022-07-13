@@ -19,7 +19,8 @@ const CharacterInfo = () => {
     useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`)
     .then((res) => {
-      //console.log(res.data)
+      console.log("res.data")
+      console.log(res.data)
       setMoves(res.data.moves)
       setAbties(res.data.abilities)
       setPokemondata(res.data)
@@ -38,6 +39,7 @@ const CharacterInfo = () => {
     axios.get(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
     .then((res) => {
       console.log("Species")
+      console.log(res.data)
       console.log(res.data.color.name)
       if(res.data.color.name=="green")setColor("rgb(72,208,176)")
       else if(res.data.color.name=="red")setColor("rgb(251,108,108)")
@@ -52,15 +54,18 @@ const CharacterInfo = () => {
   //console.log(abties);
   return (
     <div id="characterinfo" style={{backgroundColor : `${color}`}}>
+      <div id="cont1">
       <div id="maininfo">
-          <h3>Weight: {pokemondata.weight}</h3>
-          <img src={image} alt="" />
+          
+          <img id='pokemonimg'src={image} alt="" />
           <br/>
           <h2>{pokemon.charAt(0).toUpperCase() + pokemon.slice(1)}</h2>
           <h3>Height: {pokemondata.height}</h3>
           <h3>#{pokemondata.id}</h3>
+          <h3>Weight: {pokemondata.weight}</h3>
 
       </div>
+      <div id="cont2">
       <div id="type">
         <h2>Type: </h2>
         {types.map((type) => (
@@ -73,20 +78,32 @@ const CharacterInfo = () => {
             <span key={abilityy.ability.name}>{abilityy.ability.name}  </span>
           ))}
       </div>
+      </div>
       <div id="statbase">
+        <h3>Stats Base</h3>
         <p>Base health: {basehealth}</p>
         <p>Attack: {attack}</p> 
         <p>Defense: {defense}  </p>
         <p>Speed: {speed}  </p> 
+          </div>
       </div>
       <div id="movements">
+        <br/>
         <h2>Moves</h2>    
         {moves.map((movee) => (
             <p key={movee.move.name}>{movee.move.name} </p> 
           ))} 
+        <br/>
       </div>
     </div>
   );
 };
 
 export default CharacterInfo;
+
+/*<div id="movements">
+        <h2>Moves</h2>    
+        {moves.map((movee) => (
+            <p key={movee.move.name}>{movee.move.name} </p> 
+          ))} 
+      </div>*/

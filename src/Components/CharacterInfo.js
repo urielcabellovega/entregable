@@ -58,14 +58,17 @@ const CharacterInfo = () => {
     var color;
     for (var type in types) {
       console.log(`${type} ${types[type].type.name}`);
-      if(types[type].type.name==='grass') color="red";
-      console.log("DDDDD" + color );//arreglar
-      return(<span key={types[type].type.name}>{types[type].type.name}</span>)
+      if(types[type].type.name==='grass') 
+      color="red";
+      console.log("DDDDD" + color );
       
-    //if(type =='normal')
-      //color =´blue´
-    /*case 'fighting':
-      return 'https://cdn2.bulbagarden.net/upload/6/67/FightingIC_Big.png';
+    switch(type){
+    case 'normal':
+      color="rgb(115, 81, 89);";
+      break;
+    case 'fighting':
+      color="rgb(115, 81, 89)";
+      break;
     case 'flying':
       return 'https://cdn2.bulbagarden.net/upload/c/cb/FlyingIC_Big.png';
     case 'poison':
@@ -100,8 +103,17 @@ const CharacterInfo = () => {
       return 'https://cdn2.bulbagarden.net/upload/d/df/Picross_FairyIC.png';
     default:
       return 'https://cdn2.bulbagarden.net/upload/3/3c/UnknownIC_Big.png';
-  ))*/
+  }
+
     }
+    return(
+      <>
+        {
+        types.map((type) => (
+          <span key={type.type.name}>{type.type.name}  </span>
+        ))}
+      </>       
+      )
   }
   //console.log(abties);
   return (

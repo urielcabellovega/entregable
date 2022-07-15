@@ -47,6 +47,7 @@ const CharacterCard = ({ pokemonUrl }) => {
       else if(res.data.color.name=="brown")setColor("rgb(115,81,89)")
       else if(res.data.color.name=="yellow")setColor("rgb(255,235,59)")
       else if(res.data.color.name=="purple")setColor("rgb(91,45,134)")
+      else if(res.data.color.name=="white")setColor("rgb(139,195,74)")
       else setColor(res.data.color.name)
     });
     

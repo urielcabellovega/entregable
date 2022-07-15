@@ -10,6 +10,7 @@ const CharacterInfo = () => {
   const [pokemon, setPokemon] = useState("");
   const [pokemondata, setPokemondata] = useState({});
   const [color, setColor] = useState();
+  const [color2, setColor2] = useState("");
   const [image, setImage] = useState(""); 
   const [basehealth,setBasehealth]=useState("");
   const [attack,setAttack]=useState("");
@@ -51,6 +52,57 @@ const CharacterInfo = () => {
     });
     
   },);
+
+  const Color = () =>{
+    console.log("LC");
+    var color;
+    for (var type in types) {
+      console.log(`${type} ${types[type].type.name}`);
+      if(types[type].type.name==='grass') color="red";
+      console.log("DDDDD" + color );//arreglar
+      return(<span key={types[type].type.name}>{types[type].type.name}</span>)
+      
+    //if(type =='normal')
+      //color =´blue´
+    /*case 'fighting':
+      return 'https://cdn2.bulbagarden.net/upload/6/67/FightingIC_Big.png';
+    case 'flying':
+      return 'https://cdn2.bulbagarden.net/upload/c/cb/FlyingIC_Big.png';
+    case 'poison':
+      return 'https://cdn2.bulbagarden.net/upload/3/3d/PoisonIC_Big.png';
+    case 'ground':
+      return 'https://cdn2.bulbagarden.net/upload/8/8f/GroundIC_Big.png';
+    case 'rock':
+      return 'https://cdn2.bulbagarden.net/upload/c/ce/RockIC_Big.png';
+    case 'bug':
+      return 'https://cdn2.bulbagarden.net/upload/c/c8/BugIC_Big.png';
+    case 'ghost':
+      return 'https://cdn2.bulbagarden.net/upload/7/73/GhostIC_Big.png';
+    case 'steel':
+      return 'https://cdn2.bulbagarden.net/upload/d/d4/SteelIC_Big.png';
+    case 'fire':
+      return 'https://cdn2.bulbagarden.net/upload/2/26/FireIC_Big.png';
+    case 'water':
+      return 'https://cdn2.bulbagarden.net/upload/5/56/WaterIC_Big.png';
+    case 'grass':
+      return 'https://cdn2.bulbagarden.net/upload/7/74/GrassIC_Big.png';
+    case 'electric':
+      return 'https://cdn2.bulbagarden.net/upload/4/4a/ElectricIC_Big.png';
+    case 'psychic':
+      return 'https://cdn2.bulbagarden.net/upload/6/60/PsychicIC_Big.png';
+    case 'ice':
+      return 'https://cdn2.bulbagarden.net/upload/6/6f/IceIC_Big.png';
+    case 'dragon':
+      return 'https://cdn2.bulbagarden.net/upload/4/48/DragonIC_Big.png';
+    case 'dark':
+      return 'https://cdn2.bulbagarden.net/upload/5/56/DarkIC_Big.png';
+    case 'fairy':
+      return 'https://cdn2.bulbagarden.net/upload/d/df/Picross_FairyIC.png';
+    default:
+      return 'https://cdn2.bulbagarden.net/upload/3/3c/UnknownIC_Big.png';
+  ))*/
+    }
+  }
   //console.log(abties);
   return (
     <div id="characterinfo" style={{backgroundColor : `${color}`}}>
@@ -68,9 +120,7 @@ const CharacterInfo = () => {
       <div id="cont2">
       <div id="type">
         <h2>Type: </h2>
-        {types.map((type) => (
-            <span key={type.type.name}>{type.type.name}  </span>
-        ))}
+        {Color()}
       </div>
       <div id="abilities">
           <h2>Abilities: </h2>

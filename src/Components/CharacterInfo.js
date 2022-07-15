@@ -58,51 +58,65 @@ const CharacterInfo = () => {
     var color;
     for (var type in types) {
       console.log(`${type} ${types[type].type.name}`);
-      if(types[type].type.name==='grass') 
-      color="red";
       console.log("DDDDD" + color );
       
     switch(type){
-    case 'normal':
+    case 'normal'://
       color="rgb(115, 81, 89);";
       break;
-    case 'fighting':
+    case 'fighting'://
       color="rgb(115, 81, 89)";
       break;
-    case 'flying':
-      return 'https://cdn2.bulbagarden.net/upload/c/cb/FlyingIC_Big.png';
-    case 'poison':
-      return 'https://cdn2.bulbagarden.net/upload/3/3d/PoisonIC_Big.png';
-    case 'ground':
-      return 'https://cdn2.bulbagarden.net/upload/8/8f/GroundIC_Big.png';
-    case 'rock':
-      return 'https://cdn2.bulbagarden.net/upload/c/ce/RockIC_Big.png';
-    case 'bug':
-      return 'https://cdn2.bulbagarden.net/upload/c/c8/BugIC_Big.png';
-    case 'ghost':
-      return 'https://cdn2.bulbagarden.net/upload/7/73/GhostIC_Big.png';
+    case 'flying'://
+      color="rgb(72, 103, 123)";
+      break;
+    case 'poison'://
+      color="rgb(91,45,134)";
+      break;
+    case 'ground'://
+      color="rgb(255, 235, 59)";
+      break;
+    case 'rock'://
+      color="rgb(70, 24, 11)";
+      break;
+    case 'bug'://
+      color="rgb(139, 195, 74)";
+      break;
+    case 'ghost'://
+      color="rgb(49, 51, 106)";
+      break;
     case 'steel':
-      return 'https://cdn2.bulbagarden.net/upload/d/d4/SteelIC_Big.png';
-    case 'fire':
-      return 'https://cdn2.bulbagarden.net/upload/2/26/FireIC_Big.png';
-    case 'water':
-      return 'https://cdn2.bulbagarden.net/upload/5/56/WaterIC_Big.png';
-    case 'grass':
-      return 'https://cdn2.bulbagarden.net/upload/7/74/GrassIC_Big.png';
+      color="rgb(93, 115, 108)";///
+      break;
+    case 'fire'://
+      color="rgb(251, 108, 108)";
+      break;
+    case 'water'://
+      color="rgb(112, 183, 250)";
+      break;
+    case 'grass'://
+      color="rgb(72, 208, 176)";
+      break;
     case 'electric':
-      return 'https://cdn2.bulbagarden.net/upload/4/4a/ElectricIC_Big.png';
+      color="rgb(226, 224, 45)";//
+      break;
     case 'psychic':
-      return 'https://cdn2.bulbagarden.net/upload/6/60/PsychicIC_Big.png';
-    case 'ice':
-      return 'https://cdn2.bulbagarden.net/upload/6/6f/IceIC_Big.png';
-    case 'dragon':
-      return 'https://cdn2.bulbagarden.net/upload/4/48/DragonIC_Big.png';
-    case 'dark':
-      return 'https://cdn2.bulbagarden.net/upload/5/56/DarkIC_Big.png';
-    case 'fairy':
-      return 'https://cdn2.bulbagarden.net/upload/d/df/Picross_FairyIC.png';
+      color="rgb(255, 235, 59)";//es igual
+      break;
+    case 'ice'://
+      color="rgb(134, 210, 244)";
+      break;
+    case 'dragon'://
+      color="rgb(68, 138, 148)";
+      break;
+    case 'dark'://
+      color="rgb(3, 7, 6)";
+      break;
+    case 'fairy'://
+      color="rgb(152, 24, 68)";
+      break;
     default:
-      return 'https://cdn2.bulbagarden.net/upload/3/3c/UnknownIC_Big.png';
+      color=Color;
   }
 
     }

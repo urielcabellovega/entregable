@@ -56,75 +56,76 @@ const CharacterInfo = () => {
   const Color = () =>{
     console.log("LC");
     var color;
+    var colors = [];
     for (var type in types) {
       console.log(`${type} ${types[type].type.name}`);
       console.log("DDDDD" + color );
       
-    switch(type){
+    switch(types[type].type.name){
     case 'normal'://
-      color="rgb(115, 81, 89);";
+      colors[type]="rgb(115, 81, 89);";
       break;
     case 'fighting'://
-      color="rgb(115, 81, 89)";
+      colors[type]="rgb(115, 81, 89)";
       break;
     case 'flying'://
-      color="rgb(72, 103, 123)";
+      colors[type]="rgb(72, 103, 123)";
       break;
     case 'poison'://
-      color="rgb(91,45,134)";
+      colors[type]="rgb(91,45,134)";
       break;
     case 'ground'://
-      color="rgb(255, 235, 59)";
+      colors[type]="rgb(255, 235, 59)";
       break;
     case 'rock'://
-      color="rgb(70, 24, 11)";
+      colors[type]="rgb(70, 24, 11)";
       break;
     case 'bug'://
-      color="rgb(139, 195, 74)";
+      colors[type]="rgb(139, 195, 74)";
       break;
     case 'ghost'://
-      color="rgb(49, 51, 106)";
+      colors[type]="rgb(49, 51, 106)";
       break;
     case 'steel':
-      color="rgb(93, 115, 108)";///
+      colors[type]="rgb(93, 115, 108)";///
       break;
     case 'fire'://
-      color="rgb(251, 108, 108)";
+      colors[type]="rgb(251, 108, 108)";
       break;
     case 'water'://
-      color="rgb(112, 183, 250)";
+      colors[type]="rgb(112, 183, 250)";
       break;
     case 'grass'://
-      color="rgb(72, 208, 176)";
+      colors[type]="rgb(72, 208, 176)";
       break;
     case 'electric':
-      color="rgb(226, 224, 45)";//
+      colors[type]="rgb(226, 224, 45)";//
       break;
     case 'psychic':
-      color="rgb(255, 235, 59)";//es igual
+      colors[type]="rgb(255, 235, 59)";//es igual
       break;
     case 'ice'://
-      color="rgb(134, 210, 244)";
+      colors[type]="rgb(134, 210, 244)";
       break;
     case 'dragon'://
-      color="rgb(68, 138, 148)";
+      colors[type]="rgb(68, 138, 148)";
       break;
     case 'dark'://
-      color="rgb(3, 7, 6)";
+      colors[type]="rgb(3, 7, 6)";
       break;
     case 'fairy'://
-      color="rgb(152, 24, 68)";
+      colors[type]="rgb(152, 24, 68)";
       break;
     default:
-      color=Color;
+      colors[type]=Color;
   }
 
     }
     return(
       <>
         {
-        types.map((type) => (
-          <span key={type.type.name}>{type.type.name}  </span>
+        types.map((type,index) => (
+          <span id="type2" key={type.type.name} style={{backgroundColor : `${colors[index]}`}}>{type.type.name} </span>
         ))}
       </>       
       )
@@ -146,7 +147,9 @@ const CharacterInfo = () => {
       <div id="cont2">
       <div id="type">
         <h2>Type: </h2>
-        {Color()}
+        <div id="typee">
+          {Color()}
+        </div>
       </div>
       <div id="abilities">
           <h2>Abilities: </h2>
@@ -166,6 +169,7 @@ const CharacterInfo = () => {
       <div id="movements">
         <br/>
         <h2>Moves</h2>    
+        
         {moves.map((movee) => (
             <p key={movee.move.name}>{movee.move.name} </p> 
           ))} 

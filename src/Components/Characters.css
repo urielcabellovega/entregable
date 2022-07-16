@@ -120,10 +120,12 @@ a{
     border-radius: 0.5em;
     text-align: center;
     margin-bottom: 2em;
+    padding: 1em;
     
 }
 #characterinfo{
     height:max-content;
+    padding-top: 7em;
     padding: 5em;
     display: flex;
     flex-direction: row;
@@ -147,11 +149,12 @@ a{
   
 }
 #maininfo{
-  padding-top: 16%;
-  height: 13%;
+  height: 15%;
   width: 100%;
+  margin-top: 4em;
 }
 #movements{
+  margin-top: 4em;
   width: 20%;
 }
 #statbase{
@@ -161,8 +164,19 @@ a{
   width: 49%;
 }
 #pokemonimg{
-    position: absolute;
-    height: 15%;
+    position: relative;
+    height: 85%;
     width: auto;
+    transform: translate(0px,-4em);
     
+}
+#type2{
+  width: 35%;
+    
+}
+#typee{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

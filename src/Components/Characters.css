@@ -6,6 +6,7 @@
     
 }
 #pokedex{
+    display: inline;
     margin-top: 1%;
     padding-left: 3em;
     font-size: 2.5em;
@@ -21,6 +22,7 @@ h1{
     margin-top: 0%;
 }
 .welcome-message{
+    display: inline;
     padding-left: 8em;
     color: white;
 }
@@ -121,6 +123,7 @@ a{
     text-align: center;
     margin-bottom: 2em;
     padding: 1em;
+    font-family: sans-serif;
     
 }
 #characterinfo{
@@ -149,9 +152,11 @@ a{
   
 }
 #maininfo{
-  height: 15%;
+  height: 17%;
   width: 100%;
   margin-top: 4em;
+  padding: 2em;
+
 }
 #movements{
   margin-top: 4em;
@@ -165,7 +170,7 @@ a{
 }
 #pokemonimg{
     position: relative;
-    height: 85%;
+    height: 90%;
     width: auto;
     transform: translate(0px,-4em);
     
@@ -179,4 +184,25 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+#maininfo1{
+    margin-top: -2em;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.up{
+    margin-top: -3em;
+}
+.lcolor{
+    color: rgb(107, 107, 107);
+    text-decoration-thickness: 10em;
+}
+#moveees{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+#titleh2{
+    color: rgb(107, 107, 107);
+    
 }

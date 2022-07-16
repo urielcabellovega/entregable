@@ -137,11 +137,19 @@ const CharacterInfo = () => {
       <div id="maininfo">
           
           <img id='pokemonimg'src={image} alt="" />
-          <br/>
-          <h2>{pokemon.charAt(0).toUpperCase() + pokemon.slice(1)}</h2>
-          <h3>Height: {pokemondata.height}</h3>
-          <h3>#{pokemondata.id}</h3>
-          <h3>Weight: {pokemondata.weight}</h3>
+          
+          <div id="maininfo1">
+
+            <h3 className="up">{pokemondata.weight}<br/><span className="lcolor">Weight</span></h3>
+            <div id="maininfo2">
+              <h2>{pokemon.charAt(0).toUpperCase() + pokemon.slice(1)}</h2>
+              <h3>#{pokemondata.id}</h3>
+            </div>
+            
+            <h3 className="up">{pokemondata.height}<br/><span className="lcolor">Height</span></h3>
+            
+          </div>
+          
 
       </div>
       <div id="cont2">
@@ -168,10 +176,10 @@ const CharacterInfo = () => {
       </div>
       <div id="movements">
         <br/>
-        <h2>Moves</h2>    
+        <h2 id="titleh2">Movements</h2>    
         
         {moves.map((movee) => (
-            <p key={movee.move.name}>{movee.move.name} </p> 
+            <p id="moveees" key={movee.move.name}>{movee.move.name} </p> 
           ))} 
         <br/>
       </div>

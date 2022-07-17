@@ -125,7 +125,7 @@ const CharacterInfo = () => {
       <>
         {
         types.map((type,index) => (
-          <span id="type2" key={type.type.name} style={{backgroundColor : `${colors[index]}`}}>{type.type.name} </span>
+          <span id="type2" key={type.type.name} style={{backgroundColor : `${colors[index]}`}}>{type.type.name.charAt(0).toUpperCase()+type.type.name.slice(1)} </span>
         ))}
       </>       
       )
@@ -161,9 +161,12 @@ const CharacterInfo = () => {
       </div>
       <div id="abilities">
           <h2>Abilities: </h2>
-          {abties.map((abilityy) => (
-            <span key={abilityy.ability.name}>{abilityy.ability.name}  </span>
+          <div id="cont3">
+            {abties.map((abilityy) => (
+            <span className="abtieees" key={abilityy.ability.name}>{abilityy.ability.name.charAt(0).toUpperCase()+abilityy.ability.name.slice(1)}  </span>
           ))}
+          </div>
+          
       </div>
       </div>
       <div id="statbase">

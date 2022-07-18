@@ -169,6 +169,10 @@ a{
 #movements{
   margin-top: 9em;
   width: 20%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 #statbase{
   margin-top: 1em;
@@ -215,8 +219,10 @@ a{
     text-decoration-thickness: 10em;
 }
 #moveees{
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    margin-top: 0.1em;
+    width: 60%;
+    border-bottom: 1px solid rgb(224, 221, 221);
 }
 #titleh2{
     color: rgb(107, 107, 107);
@@ -232,9 +238,11 @@ a{
     height: 95%;
 }
 .abtieees{
-    display: block;
-    height: 75%;
-    border: 1px solid rgb(107, 107, 107);
+    display: initial;
+    padding: 0.8em;
+    border: 1px solid rgb(207, 204, 204);
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.05em 0.06em rgb(167, 169, 169);
 }
 #pokemonlogoo{
     display: block;

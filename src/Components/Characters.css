@@ -1,15 +1,15 @@
 /*Characters y charactercard*/
 .Characters{
     height: max-content;
-    padding-top: 2em;
-    background-color: rgb(28, 26, 26) ;
+    padding-top: 6em;
+    background-color: rgb(12, 2, 33) ;
     
 }
 #pokedex{
     display: inline;
     margin-top: 1%;
-    padding-left: 3em;
-    font-size: 2.5em;
+    padding-left: 2em;
+    font-size: 4em;
     height: 2em;
     text-align: left;
     margin-left: 0%;
@@ -249,3 +249,61 @@ a{
     height: 7em;
 
 }
+/*Toggle button*/
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  .toggle-switch {
+    position:relative;
+    left: 60em;
+    width: 7em;
+  }
+  
+  #lbl {
+    position: absolute;
+    width: 100%;
+    height: 2.5em;
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  #inpt {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  
+  #inpt:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0.3em;
+    width: 75px;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: inset 28px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
+  }
+  
+  #inpt:checked ~ .slider::before {
+    transform: translateX(95px);
+    background-color: var(--dark);
+    box-shadow: none;
+  }
+  

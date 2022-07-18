@@ -126,6 +126,12 @@ console.log(offset);
   return (
     <div className="Characters">
       <h1 id="pokedex">Pokedex</h1>
+      <div class = 'toggle-switch'>
+            <label id="lbl">
+                <input id="inpt"type = 'checkbox'/>
+                <span class = 'slider'></span>
+            </label>
+        </div>
       <p className="welcome-message">Welcome {userName}!, here you can find your favorite pokemon</p>
 
       <div className="select">

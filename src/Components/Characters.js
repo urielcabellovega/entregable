@@ -209,7 +209,7 @@ console.log(offset);
             {array[5]<pagesnumber ? <button class="button" onClick={() =>changearray(false)}>
               &raquo;
             </button> : null}
-            
+            <br/>
         </div>
         </div>
         );

@@ -257,9 +257,10 @@ a{
     --link-hover: rgb(24, 94, 82);
   }
   .toggle-switch {
-    position:relative;
-    left: 60em;
+    position:absolute;
+    left: 69em;
     width: 7em;
+    top: 73em;
   }
   
   #lbl {
@@ -290,15 +291,15 @@ a{
   
   .slider::before {
     content: "";
-position: absolute;
-top: 0.2em;
-left: 0.5em;
-width: 2.3em;
-height: 90%;
-border-radius: 50%;
-box-shadow: inset 38px -3px 0px -19px var(--light);
-background-color: var(--dark);
-transition: 0.3s;
+    position: absolute;
+    top: 0.2em;
+    left: 0.5em;
+    width: 2.3em;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: inset 38px -3px 0px -19px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
   }
   
   #inpt:checked ~ .slider::before {

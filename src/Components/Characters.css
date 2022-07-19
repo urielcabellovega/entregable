@@ -264,7 +264,7 @@ a{
   
   #lbl {
     position: absolute;
-    width: 100%;
+    width: 75%;
     height: 2.5em;
     background-color: var(--dark);
     border-radius: 50px;
@@ -290,19 +290,19 @@ a{
   
   .slider::before {
     content: "";
-    position: absolute;
-    top: 0.2em;
-    left: 0.3em;
-    width: 75px;
-    height: 90%;
-    border-radius: 50%;
-    box-shadow: inset 28px -4px 0px 0px var(--light);
-    background-color: var(--dark);
-    transition: 0.3s;
+position: absolute;
+top: 0.2em;
+left: 0.5em;
+width: 2.3em;
+height: 90%;
+border-radius: 50%;
+box-shadow: inset 38px -3px 0px -19px var(--light);
+background-color: var(--dark);
+transition: 0.3s;
   }
   
   #inpt:checked ~ .slider::before {
-    transform: translateX(95px);
+    transform: translateX(2em);
     background-color: var(--dark);
     box-shadow: none;
   }
